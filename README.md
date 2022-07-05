@@ -55,3 +55,8 @@ protected void ButtonInsert_Click(object sender, EventArgs e)
             GridView1.DataBind();
         }
     }
+-------------------------------------------------------------------------------
+AVERAGE ..>>>>
+
+
+SqlCommand comm = new SqlCommand("select id,(AVG(bangla)+AVG(english)+AVG(math))/3 as average from student_info group by id", con);
